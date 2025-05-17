@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoteSky</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="books-stack-of-three.png">
+
+</head>
+<body>
+  <div class="navbar">
+    <h1>NoteSky</h1>
+  </div>
+  
+  <div class="popup-overlay"></div>
+  <div class="popup-message">
+    <h2>Add Book</h2>
+    <form id="input-table">
+      <input type="text" name="Book" placeholder="Book Name" id="book">
+      <input type="text" name="Author" placeholder="AuthorName" id="author">
+      <textarea placeholder="Description" id="description" name="description"></textarea>
+      <button id="addBook">ADD</button>
+      <button id="cancelBook">CANCEL</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="box-container">
+      <h2>Rich Dad Poor Dad</h2>
+      <h4>Robert</h4>
+      <p>Rich Dad Poor Dad is a 1997 book written by Robert T. Kiyosaki and Sharon Lechter. It advocates the importance of financial literacy (financial education), financial independence and building wealth through investing in assets, real estate investing, starting and owning businesses, as well as increasing one's financial intelligence (financial IQ).</p>
+      <button onclick="deleteBook(event)">Delete</button>
+    </div>
+  </div>
+
+
+  <button class="add-button" id="add-popup-button">+</button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
